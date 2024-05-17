@@ -1,0 +1,22 @@
+server:
+  port: 8089
+#  tomcat:
+#    relaxed-query-chars : ,
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/to_do?createDatabaseIfNotExist=true
+    username: root
+    password: Theviper@6878
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
